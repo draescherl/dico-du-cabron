@@ -8,13 +8,13 @@ module.exports = {
         const fs = require('fs');
 
         // Get spreadsheet credentials :
-        // const creds = require('../client_secret.json');
+        const creds = require('../google-credentials.json');
 
         // Main function :
         async function accessSpreadsheet() {
             // Connect to the spreadsheet :
             const doc = new GoogleSpreadsheet('1Wngpbq0XeYbwExo-r2hbShr8ajPvSe3SKAOzees8B08');
-            await promisify(doc.useServiceAccountAuth)(process.env.SPREADSHEET_CREDS);
+            await promisify(doc.useServiceAccountAuth)(creds);
 
             // Get all rows :
             const info = await promisify(doc.getInfo)();
