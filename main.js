@@ -50,4 +50,4 @@ client.on('message', message => {
 });
 
 // Bot login :
-client.login('NzM1Nzg3NjE5ODAzNDYzNjkw.XxlVqg.spzkpzlZtrEEOwQQa4EfczV_jgk');
+client.login(process.env.BOT_TOKEN);
