@@ -13,7 +13,7 @@ module.exports = {
         // Main function :
         async function accessSpreadsheet() {
             // Connect to the spreadsheet :
-            const doc = new GoogleSpreadsheet('1Wngpbq0XeYbwExo-r2hbShr8ajPvSe3SKAOzees8B08');
+            const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_TOKEN);
             await promisify(doc.useServiceAccountAuth)(creds);
 
             // Get all rows :
