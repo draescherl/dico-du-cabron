@@ -44,7 +44,7 @@ client.on('message', message => {
             break;
     
         default:
-            message.channel.send('Sorry, I do not recognise this command :(');
+            message.channel.send('Commande inconnue !');
             break;
     }
 });
