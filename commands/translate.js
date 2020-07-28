@@ -36,7 +36,7 @@ module.exports = {
             channel.send(`${author} voulais dire : ${correctedMessage}`);
         }).catch((error) => {
             console.error(error);
-            channel.send('Fichier de données non trouvé. Essayez d\'exécuter \`-update\` et réessayez.');
+            channel.send('Erreur interne. Essayez d\'exécuter \`-update\` et réessayez.');
         });
         
     }

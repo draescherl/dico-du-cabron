@@ -44,7 +44,6 @@ client.on('message', message => {
             break;
     
         default:
-            message.channel.send('Commande inconnue !');
             break;
     }
 });
