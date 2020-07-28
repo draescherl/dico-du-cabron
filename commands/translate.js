@@ -34,7 +34,7 @@ module.exports = {
                 
                 // Send message in channel :
                 channel.send(`${author} voulais dire : ${correctedMessage}`);
-            }).catch(console.error);
+            });
         } catch (err) {
             console.log('Error message :');
             console.log(err);
